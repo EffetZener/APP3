@@ -95,6 +95,6 @@ arbre lire_arbre (FILE *f)
 
 void affiche_arbre (noeud *racine)
 {
-    /* à remplir */
+    printf("%s\n",racine->valeur);
 }
 

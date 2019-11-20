@@ -21,4 +21,3 @@ Tests de cas particuliers (à gérer !):
 - arbre-gauche.test
 - arbre-non-entier.test
 
-

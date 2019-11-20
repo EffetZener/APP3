@@ -51,8 +51,8 @@ int main(int argc, char* argv[])
 
     arbre mon_arbre = lire_arbre (f);
 
-    int nombre_especes; /* Ne pas initialiser ici, c'est analyse_arbre */
-    int nombre_caract;  /* qui doit s'en charger */
+    int nombre_especes = 0; /* Ne pas initialiser ici, c'est analyse_arbre */
+    int nombre_caract = 0;  /* qui doit s'en charger */
 
     affiche_arbre (mon_arbre);
 
