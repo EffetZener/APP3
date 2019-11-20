@@ -27,21 +27,19 @@ void analyse_arbre (arbre racine, int* nb_esp, int* nb_carac)
 	}
 }
 
-/*void chercherCar(arbre racine, arbre.valeur,int* pile[]){
+void chercherCar(arbre racine, arbre.valeur,int* pile[]){
 	if (racine.valeur==arbre.valeur){
 			return pile;
 	}
 	if(racine->droit){
-		analyse_arbre (racine->droit, nb_esp, nb_carac);
 		empile(pile,racine->valeur);
 	}			
 	if(racine->gauche){
-		analyse_arbre (racine->gauche, nb_esp, nb_carac);
 		empile(pile,racine->valeur);
 	}
 
 
-}*/
+}
 
 
 
