@@ -32,6 +32,7 @@ arbre lire_arbre (FILE *f);
 void affiche_arbre (arbre);
 
 
+void rec_arbre(noeud *racine,FILE *f);
 /* Macros pour de l'affichage uniquement si DEBUG est != 0 */
 extern int DEBUG;
 

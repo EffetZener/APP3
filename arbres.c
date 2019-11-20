@@ -92,9 +92,27 @@ arbre lire_arbre (FILE *f)
 }
 
 
+void rec_arbre(noeud *racine,FILE *f){
+	if (racine->gauche){
+		fprintf(f, "\t%s -> %s [label = \"non\"]\n", racine->valeur, racine->gauche->valeur);
+		rec_arbre (racine->gauche,f);
+	}
+	if (racine->droit){
+		fprintf(f, "\t%s -> %s [label = \"oui\"]\n", racine->valeur, racine->droit->valeur);
+		rec_arbre (racine->droit,f);
+	}
+}
 
 void affiche_arbre (noeud *racine)
 {
-    printf("%s\n",racine->valeur);
+ 	FILE* f;
+	f = fopen("arbre.dot", "wb");
+	fprintf(f, "digraph arbre {\n");
+
+	rec_arbre(racine,f);
+
+	fprintf(f, "}");
+	fclose(f);	
+ 
 }
 
